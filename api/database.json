@@ -1,0 +1,43 @@
+{
+  "plumbers": [
+    {
+      "id": 1,
+      "name": "Maude"
+    },
+    {
+      "id": 2,
+      "name": "Merle"
+    }
+  ],
+  "completions": [
+    {
+      "serviceRequestId": "2",
+      "plumberId": "1",
+      "dateCreated": 1658948062120,
+      "id": 1
+    }
+  ],
+  "serviceRequests": [
+    {
+      "id": 1,
+      "description": "Aut sint voluptatem fugit eius quas molestiae modi.",
+      "address": "34445 Bianka Ports",
+      "budget": 400,
+      "neededBy": "2021-08-27"
+    },
+    {
+      "description": "Leaky Sink",
+      "address": "60 Foster Way",
+      "budget": "600",
+      "neededBy": "2022-07-30",
+      "id": 2
+    },
+    {
+      "description": "Under Sink Pipe Burst",
+      "address": "300 N 500 E ",
+      "budget": "400",
+      "neededBy": "2022-07-27",
+      "id": 3
+    }
+  ]
+}
