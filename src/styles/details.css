@@ -48,7 +48,7 @@ h1 {
     background-color: rgb(223, 194, 194)
 }
 .request__delete {
-    border-radius: .5rem;
+    border-radius: .6rem;
     background-color: rgb(48, 119, 117);
     color: gainsboro;
     margin: 20px;
