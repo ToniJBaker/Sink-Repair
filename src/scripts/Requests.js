@@ -47,18 +47,31 @@ mainContainer.addEventListener(
 export const Requests = () => {
     const serviceRequests = getRequests() 
     const plumbers = getPlumbers()
+    const completions = getCompletions()
     let html = `
         <ul>
             ${
                 serviceRequests.map(request => {
-                
-                if(){}
-                
-                
-                    return  `<li>${request.description}
+                if (completions.some(obj => obj.serviceRequestId == request.id)){
+
+                return `<div class="complete">
                     <button class="request__delete"
                     id="request--${request.id}">Delete
                     </button>
+                    ${request.description}
+                    </div>`
+                
+                } else {
+                  
+                
+                return  `<div class="newRequest">
+
+                    <button class="request__delete"
+                    id="request--${request.id}">Delete
+                    </button>
+                    
+                    ${request.description}
+                    
                     <select class="plumbers" id="plumbers">
                         <option value="">Choose</option>
                         ${
@@ -68,9 +81,8 @@ export const Requests = () => {
                              }
                             ).join("")
                         }
-                         
                     </select>
-                    </li>`                        
+                    </div>`}                        
                 } ).join("")
             }
             
